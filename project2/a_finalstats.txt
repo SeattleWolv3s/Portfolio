@@ -1,0 +1,32 @@
+New game: 
+
+----------------------------------------------
+
+User: ben
+Character: 
+Health: 0
+Stamina: 2.15883e-314
+Location: 0
+Gold: 0
+Item Count: 1
+1806870448
+Potion Count: 1806871584
+Dead: 1
+Turns taken: 0
+
+----------------------------------------------
+
+User: lili
+Character: 
+Health: 0
+Stamina: 0
+Location: 0
+Gold: 0
+Item Count: 0
+0
+Potion Count: 0
+Dead: 1
+Turns taken: 0
+
+----------------------------------------------
+

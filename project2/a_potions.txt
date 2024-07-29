@@ -1,0 +1,9 @@
+Lesser Health Potion|A small vial filled with red liquid that can heal wounds when ingested, thought to be the blood of a god.|H|10|None|25
+Greater Health Potion|A large decanter of red liquid, capable of healing almost any wound.|H|25|None|50
+Lesser Stamina Potion|A small vial of green liquid, while its origins are unknown, it is capable of restoring energy to whoever drinks it.|S|10|None|25
+Greater Stamina Potion|A large decanter of green liquid, capable of restoring boundless energy upon consumption.|S|25|None|50
+Cleansing Potion|A vial of clear liquid with bits of leaves and herbs floating inside, restoring its bearer to health.|P|0|None|150
+Greater Rejuvenation Potion|An elegant decanter of viscous gold fluid, capable of restoring even the most worn down soldier to herculean strength.|B|25|None|100
+Lesser Rejuvenation Potion|A small vial of honey like fluid, thought to be the ambrosia of olympus and known for its restorative properties of both injury and energy.|B|10|None|50
+Minor Strength Potion|A minor boon of ares, gifted to soldiers who have gained his attention.|D|2|None|50
+Major Strength Potion|A great gift from ares, only given to the most legendary warriors of Greece.|D|5|None|75

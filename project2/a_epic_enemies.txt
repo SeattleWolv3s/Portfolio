@@ -1,0 +1,3 @@
+Antiphates|E|220|100|55|H|True|E|150|Greater Rejuvenation Potion|King's Blade|1|1
+Scylla|E|200|75|75|H|True|E|150|Greater Rejuvenation Potion|Fangs of Scylla|1|1
+Polyphemus|E|200|75|15|H|True|E|150|Greater Rejuvenation Potion|Cyclops Gaze|1|1

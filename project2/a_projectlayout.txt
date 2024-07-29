@@ -1,0 +1,362 @@
+Classes:
+game - done
+board - done
+combat - done
+item shop - done
+entity - done
+color - done
+epic combat - done 
+
+Structs:
+equipment - done
+potion - done
+tile - done
+damage - done
+ultimate (implementation later)
+
+game 
+{
+    public:
+    constructor 
+    {
+        initialize all arrays and boards
+    }
+
+    game start
+    {
+        load item shop
+        display start menu and introduction
+    }
+
+    loaders
+    {
+        load in all arrays from files, might be used in constructor 
+    }
+
+    turn taker 
+    {
+        display turn menu for the player whos turn it is
+    }
+
+    status check
+    {
+        if condition is not H, apply proper deduction
+    }
+
+    event generator 
+    {
+        determine if an event occurs based on what tile the player lands on, might stay in board class.
+    }
+
+    victory
+    {
+        if a players location equals 50, end game and declare victory, might go into main
+        print each players stats into a text file:
+        player name and character
+        winner, loser, or draw
+        amount of gold left
+        hp left
+        stamina left
+        remaining equipment
+    }
+
+    private : 
+    all loaded players (entity)
+    all loaded enemies (entity)
+    all loaded items (equipment)
+    all loaded potions (potion)
+    selected players (entity)
+    a map for each selected player (board)
+    player turn (bool)
+}
+consider adding blank variations for all structs for easier removals (i.e. equipment and potions)
+
+board 
+{
+    tile structures
+    {
+        location (int)
+        randomly determines tile type using rand function
+    }
+
+    public:
+    constructor 
+    movement function 
+    {
+        add movement one at a time to avoid skipping combat
+    }
+
+    board display
+    {
+        print out colored tiles in the order of the map using tile traits to determine color
+    }
+
+    private:
+    map array (tile)
+}
+
+color 
+{
+    define color outputs to add flair to text output;
+}
+
+item shop 
+{
+    public:
+    constructor 
+    {
+        generate items and potions 
+    }
+
+    newitems 
+    {
+        re randomize arrays to allow for use of same item shop across all encounters 
+    }
+
+    shop menu
+    {
+        display menu, showing items and potions
+        option to purchase 
+        potential implementation of selling function
+    }
+
+    purchase item/potion (separate but same layout)
+    {
+        check to see if player has enough money and open slot for items
+        set gold equal to gold minus price of purchase 
+        add item/potion to equivalent array
+        if potion and matching already owned, instead increase held by 1
+    }
+
+    sell item/potion (see above)
+    {
+        display available items and potions to sell, if potion, display number held as well, display prices too
+        add gold equal to price 
+        remove from equivalent array or remove held by 1 if potion
+    }
+
+    private:
+    array of items
+    array of potions 
+}
+
+combat 
+{
+    public:
+    constructor 
+    {
+        randomly acquire enemy
+        load player based on turn
+        dice roll to determine advantage
+    }
+
+    generator 
+    {
+        acquires new enemy, see item shop 
+        re roll initiative
+    }
+
+    turnMenu
+    {
+        display options for each turn (attack, use item, attempt to run)
+    }
+
+    attack 
+    {
+        roll for miss 
+        roll for damage (1 - total damage)
+        substract defense from damage, account for weaknesses (percentages for elemental damages)
+        set hp using hp - damage dealt (1 point damage = 2.5 hp lost by player and 3.5 by enemy)
+    }
+
+    use item 
+    {
+        consume a potion, gain effects
+    }
+
+    run
+    {
+        roll for opportunity attack
+        lose 35 stamina
+        no shop
+        no loot
+    }
+
+    victory 
+    {
+        display available loot and available slots for loot
+        when done, display re rolled item shop
+    }
+
+    private:
+    player (entity)
+    enemy (entity)
+}
+
+entity 
+{
+    public:
+    constructor
+    {
+        default and version with all inputs for loading from files
+    }
+
+    standard setter/getter functions
+    {
+        for all static/default type variables, standard input and returns with verification
+    }
+
+    array setters
+    {
+        search for open array slot and verify input 
+        set array index as input and adjust values accordingly 
+    }
+
+    array getters/finders
+    {
+        retrieve the item of index or string given, verify input
+    }
+
+    array erasers 
+    {
+        find the given variable and set its index to all blanks, store universal blanks for this reason
+    }
+
+    use potion
+    {
+        grant effect using type and value 
+        reduce held by 1
+        if held equals zero, set potion belt index to blank
+    }
+
+    equip 
+    {
+        check for open slot
+        if none, ask for replacement
+        if replace, backpack index i becomes equipped index j 
+        if open, open index set to backpack index and backpack index set to blank
+    }
+
+    equipment function
+    {
+        adds equipment value to respective stats
+    }
+
+    stat printer 
+    {
+        display all stats neatly, potential implementation of stat menu
+    }
+
+    death
+    {
+        ends game if player dies
+    }
+
+    private:
+    name (string)
+    hp (double)
+    stamina (double)
+    defense (double)
+    advantage (bool)
+    weakness (character)
+    gold (double)
+    condition (character)
+    damage (damage)
+    enemy? (bool)
+    equipped[2] (equipment array)
+    backpack[2] (equipment array)
+    potion belt[3] (potion array)
+    potion count (int)
+    equipped count (int)
+    backpack count (int)
+    item count[2] (int array)
+    location (int)
+    boons[5] (string)
+    turns taken (int)
+    ultimate (ultimate)
+    player count (int)
+}
+
+Structs:
+
+equipment 
+{
+    name (string)
+    type (character)
+    description (string)
+    price (double)
+    element (character)
+    value (double)
+    alternate value (double)
+    owner (string)
+}
+
+potion
+{
+    name (string)
+    type (character)
+    value (double)
+    price (double)
+    element (character)
+    description (string)
+    held (int)
+}
+
+tile 
+{
+    board location (int)
+    tile choice (random int)
+    tile type (string)
+    tile color (string)
+}
+
+damage 
+{
+    total damage (double)
+    fire damage (double)
+    water damage (double)
+    earth damage (double)
+    air damage (double)
+}
+
+ultimate
+{
+    name (string)
+    description (string)
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+needed priority:
+full functionality
+enemy stats during combat 
+victory 
+opportunity attacks
+fout function 
+
+flair additions (once full game is functional and other assignments are done):
+ultimates 
+additional calamities 
+commentary from the gods, potentially randomized
+add specific enemy text lines
+proper text spacing 
+hidden treasures
+circes brew
+colored text to separate characters
+additional comments for actions (dice rolls, attacks)
+
+really extra if i have spare time:
+food and water system maybe 
+multiple directions in combat

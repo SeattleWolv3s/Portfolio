@@ -1,0 +1,7 @@
+Sirens|I|150|100|15|H|False|E|25|Greater Health Potion|Tidal Charm of the Sirens|1|1
+Giants|I|170|75|10|H|False|F|35|Greater Health Potion|Maul of the Giants|1|1
+Cicones|I|140|90|20|H|False|E|40|Greater Health Potion|Ciconian Spear|1|1
+Lotus Eaters|I|160|80|25|H|True|A|45|Greater Health Potion|Lotus Staff|1|1
+Laestrygonians|I|180|70|10|H|False|F|55|Greater Health Potion|Laestrygonian Club|1|1
+Circe's Enchantresses|I|75|60|35|H|True|E|65|Greater ealth Potion|Enchanted Wand|1|1
+Calypso's Nymphs|I|100|50|20|H|True|W|75|Greater Health Potion|Nymph's Shield|1|1

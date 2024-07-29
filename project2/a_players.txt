@@ -1,0 +1,4 @@
+Odysseus|P|100|100|5|H|False|W|100|Lesser Health Potion|Bow of Odysseus|1|1
+Argos|P|120|100|50|H|False|W|150|Lesser Health Potion|Argos' Fangs|1|1
+Circe|P|110|110|20|H|False|E|75|Lesser Health Potion|Circe's Wand|1|1
+Achilles|P|130|60|50|H|False|F|150|Lesser Health Potion|Shield of Achilles|1|1

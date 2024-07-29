@@ -1,0 +1,21 @@
+Bow of Odysseus|A special bow gifted to Odysseus, known for empowering its user, especially Odysseus himself.|D|10|15|W|100|Odysseus
+Shield of Achilles|An elegant shield crafted by the gods to protect Achilles' wrath until its completion.|S|10|15|E|100|Achilles
+Circe's Wand|A wand wielded by the infamous sorcerer Circe, feared for its ability to transform humans into animals.|D|15|20|W|125|Circe
+Argos' Fangs|A remnant of a loyal friend, serving his master till the bitter end.|C|20|30|E|125|Argos
+Hermes' Winged Sandals|Sandals once worn by the god of speed himself, gifted to mortals and known to carry its wearer to safety.|C|20|20|A|200|Hermes
+Helios' Luminous Shield|The shield carried by the god of light, legend says that mortals who stare into it are burned to ash.|B|50|50|F|350|Helios
+Trident of Poseidon|The primary weapon of the god of the sea himself, renowned for slaying great beasts of the depths in one fell swing.|B|50|50|W|350|Poseidon
+Demeter's Harvest Armor|Worn by the goddess of harvest, this armor protects its wearer and grants affinity with the earth.|B|50|50|E|350|Demeter
+Athena's Spear|Held by the goddess of wisdom, its user is granted some of her wisdom allowing for more elegant and precise attacks.|C|15|15|W|275|Athena
+Poseidon's Shell|A shell from the kingdom of the sea god that grants its user kindness among the waves, calming their temper.|C|20|20|W|150|Uranus
+Maul of the Giants|A crude and hulking club that is closer to a tree than a stick|D|12|12|A|75|Giants
+Tidal Charm of the Sirens|A jagged necklace made of shattered shells and what appear to be the teeth of dead sailors|D|12|12|W|75|Sirens
+Ciconian Spear|Wielded by the fearful Cicones, their spears are sharper than most swords|D|10|10|E|75|Cicones
+Lotus Staff|the weapons of the lotus eaters who restful sleep was disrupted by your crew, enraging them|D|10|10|E|80|Lotus Eaters
+Laestrygonian Club|clubs carved from rock with more finesse and intent than the crude giants, used in hunting humans for Laestrygonian meals|D|15|15|E|90|Laestrygonians
+Enchanted Wand|Enchanted by circe, this wand is capable of minor spells, though it grows more powerful in the right hands|D|10|10|A|100|Circe's Enchantresses
+Nymph's Shield|Held by nymphs for protection against humans and the elements, its natural patterns are hypnotic|S|20|20|E|120|Nymphs
+Siren's Salve|An infamous potion held by the sirens of the sea, capable of strengthening any solider.|U|20|20|None|250|Sirens
+King's Blade|Held by the king of cannibals, its edge can strike fear into even the god of war himself|D|60|60|E|0|Antiphates
+Fangs of Scylla|Though tucked away in the isles, the fangs of the sea monster are far more deadly than any blade|D|60|60|E|0|Scylla
+Cyclop's Gaze|Thought to look into the future, this eye grants the user unrivaled foresight and protection from harm|S|50|50|A|0|Polyphemus
